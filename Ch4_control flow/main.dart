@@ -1,4 +1,17 @@
+
+import 'dart:io';
+
 void main(){
+
+
+  stdout.write("Please input number : ");
+  int number  = int.parse(stdin.readLineSync()!); 
+  if(number % 2 == 0){
+    print("This number event");
+  }else{
+    print("This number odd");
+  }
+
 
   // if Statement
   // int age = 18;
@@ -78,12 +91,12 @@ void main(){
 
 
   // Continue
-  for(int i = 0 ; i < 5;i++){
-    if(i == 3){ // continue of loop
-      continue;
-    }
-    print("i : $i");
-  }
+  // for(int i = 0 ; i < 5;i++){
+  //   if(i == 3){ // continue of loop
+  //     continue;
+  //   }
+  //   print("i : $i");
+  // }
   // 0,1,2,4
 
 }
